@@ -29,6 +29,7 @@ cd ../bin
 
 ## Example command
 
+```
 # only genomes in .fa format are detected properly 
 ln -s genome.fasta input.fa
 
@@ -37,7 +38,7 @@ mkdir -p out_mask output
 
 # Run Red with an input.fa in the current dir . 
 Red -gnm . -msk out_mask -rpt output
-
+```
 
 
 ## Full usage
