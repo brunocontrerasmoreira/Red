@@ -30,8 +30,8 @@ cd ../bin
 ## Example command
 
 ```
-# only genomes in .fa format are detected properly 
-ln -s genome.fasta input.fa
+# only genomes in .fa format are detected properly - and will be DELETED by Red
+cp /mnt/genome.fasta input.fa
 
 # out dirs must all exist else core dump
 mkdir -p out_mask output
@@ -39,6 +39,8 @@ mkdir -p out_mask output
 # Run Red with an input.fa in the current dir . 
 Red -gnm . -msk out_mask -rpt output
 ```
+
+**Beware: note that .fa files in the genome directory will be deleted by Red - so only copy them in. You will have to copy the genome in again before the next run**
 
 
 ## Full usage
