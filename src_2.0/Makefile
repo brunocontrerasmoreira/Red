@@ -2,7 +2,8 @@
 
 # CXX = /usr/bin/c++
 # CXX = /usr/bin/g++
-CXX = g++-8
+#CXX = g++-8
+CXX = g++-9
 
 CXXFLAGS = -std=c++14 -fopenmp -O3 -g -fmessage-length=0 -Wall -fpermissive
 
